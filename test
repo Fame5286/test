@@ -1,0 +1,161 @@
+--[[
+
+		Gui2Lua™
+		10zOfficial
+		Version 1.0.0
+
+]]
+
+
+-- Instances
+
+local ScreenGui = Instance.new("ScreenGui")
+local _1TextButton = Instance.new("TextButton")
+local Frame1 = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local _01TextButton = Instance.new("TextButton")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local TextButton2 = Instance.new("TextButton")
+local TextLabel_4 = Instance.new("TextLabel")
+local TextLabel_5 = Instance.new("TextLabel")
+
+-- Properties
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+_1TextButton.Name = "1TextButton"
+_1TextButton.Parent = ScreenGui
+_1TextButton.BackgroundColor3 = Color3.new(1, 1, 1)
+_1TextButton.BorderColor3 = Color3.new(0, 0, 0)
+_1TextButton.BorderSizePixel = 10
+_1TextButton.Position = UDim2.new(0.0224664938, 0, 0.104414545, 0)
+_1TextButton.Size = UDim2.new(0, 51, 0, 46)
+_1TextButton.Font = Enum.Font.Unknown
+_1TextButton.Text = "X"
+_1TextButton.TextColor3 = Color3.new(0, 0, 0)
+_1TextButton.TextSize = 14
+
+Frame1.Name = "Frame1"
+Frame1.Parent = _1TextButton
+Frame1.Active = true
+Frame1.BackgroundColor3 = Color3.new(1, 1, 1)
+Frame1.BorderColor3 = Color3.new(0, 0, 0)
+Frame1.BorderSizePixel = 0
+Frame1.Position = UDim2.new(1.50980377, 0, -0.608695626, 0)
+Frame1.Size = UDim2.new(0, 503, 0, 350)
+
+TextLabel.Parent = Frame1
+TextLabel.Active = true
+TextLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.334693879, 0, 0.0872483253, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.Font = Enum.Font.Unknown
+TextLabel.Text = "XEO HUB"
+TextLabel.TextColor3 = Color3.new(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14
+TextLabel.TextWrapped = true
+
+_01TextButton.Name = "01TextButton"
+_01TextButton.Parent = Frame1
+_01TextButton.BackgroundColor3 = Color3.new(1, 1, 1)
+_01TextButton.BorderColor3 = Color3.new(0, 0, 0)
+_01TextButton.BorderSizePixel = 10
+_01TextButton.Position = UDim2.new(0.275151819, 0, 0.654995263, 0)
+_01TextButton.Size = UDim2.new(0, 259, 0, 114)
+_01TextButton.Font = Enum.Font.SourceSansBold
+_01TextButton.Text = "OPEN"
+_01TextButton.TextColor3 = Color3.new(0, 0, 0)
+_01TextButton.TextScaled = true
+_01TextButton.TextSize = 20
+_01TextButton.TextWrapped = true
+_01.MouseButton1Down:connect(function(Value)
+	_G. Teleport = Value 
+	while _G. Teleport do wait ()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-442061.25, 2.9980247020721436, 8.44399642944336)
+		wait(.7)
+	end
+end)
+
+TextLabel_2.Parent = Frame1
+TextLabel_2.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_2.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_2.BorderSizePixel = 5
+TextLabel_2.Position = UDim2.new(0.00952380989, 0, 0.199105144, 0)
+TextLabel_2.Size = UDim2.new(0, 144, 0, 50)
+TextLabel_2.Font = Enum.Font.SourceSansBold
+TextLabel_2.Text = "MENU"
+TextLabel_2.TextColor3 = Color3.new(0, 0, 0)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14
+TextLabel_2.TextWrapped = true
+
+TextLabel_3.Parent = Frame1
+TextLabel_3.BackgroundColor3 = Color3.new(0, 0, 0)
+TextLabel_3.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(0, 0, 0.0285714287, 0)
+TextLabel_3.Size = UDim2.new(0, 490, 0, 16)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.TextColor3 = Color3.new(0, 0, 0)
+TextLabel_3.TextSize = 14
+
+TextButton2.Name = "TextButton2"
+TextButton2.Parent = Frame1
+TextButton2.BackgroundColor3 = Color3.new(1, 1, 1)
+TextButton2.BorderColor3 = Color3.new(1, 0.168627, 0.0235294)
+TextButton2.BorderSizePixel = 5
+TextButton2.Position = UDim2.new(0.913869083, 0, 0.0171428565, 0)
+TextButton2.Size = UDim2.new(0, 43, 0, 24)
+TextButton2.Font = Enum.Font.SourceSans
+TextButton2.Text = "EXIT"
+TextButton2.TextColor3 = Color3.new(0, 0, 0)
+TextButton2.TextSize = 14
+
+TextLabel_4.Parent = Frame1
+TextLabel_4.BackgroundColor3 = Color3.new(0, 0, 0)
+TextLabel_4.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.Position = UDim2.new(0, 0, 0.178970948, 0)
+TextLabel_4.Size = UDim2.new(0, 503, 0, 15)
+TextLabel_4.Font = Enum.Font.SourceSans
+TextLabel_4.TextColor3 = Color3.new(0, 0, 0)
+TextLabel_4.TextSize = 14
+
+TextLabel_5.Parent = Frame1
+TextLabel_5.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_5.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_5.BorderSizePixel = 0
+TextLabel_5.Position = UDim2.new(0.924453259, 0, 0.920000017, 0)
+TextLabel_5.Size = UDim2.new(0, 32, 0, 28)
+TextLabel_5.Font = Enum.Font.SourceSans
+TextLabel_5.Text = "V1.0"
+TextLabel_5.TextColor3 = Color3.new(0, 0, 0)
+TextLabel_5.TextSize = 14
+
+-- Scripts
+
+local function WVLQD_fake_script() -- TextButton2.Script 
+	local script = Instance.new('Script', TextButton2)
+
+	function CLOSEGUI ()
+		script.Parent.Parent.Parent.Frame1.Visible = false
+	end
+	script.Parent.MouseButton1Click:Connect(CLOSEGUI)
+end
+coroutine.wrap(WVLQD_fake_script)()
+local function MNVYY_fake_script() -- _1TextButton.xScript 
+	local script = Instance.new('Script', _1TextButton)
+
+	function OPENGUI ()
+		script.Parent.Frame1.Visible = true
+	end
+	script.Parent.MouseButton1Click:Connect(OPENGUI)
+	
+	
+end
+coroutine.wrap(MNVYY_fake_script)()
